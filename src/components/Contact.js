@@ -100,7 +100,7 @@ const Contact = () => {
           required
         />
         <ContactText>
-          للوصول إلى مركز الاتصال، نأمل منك الاتصال على 800 118 9999
+      +966 55 429 9346 للوصول إلى مركز الاتصال، نأمل منك الاتصال على   
         </ContactText>
         <CallButton href="tel:+966 55 429 9346">الاتصال</CallButton>
       </Form>
