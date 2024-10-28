@@ -102,7 +102,7 @@ const Contact = () => {
         <ContactText>
           للوصول إلى مركز الاتصال، نأمل منك الاتصال على 800 118 9999
         </ContactText>
-        <CallButton href="tel:8001189999">الاتصال</CallButton>
+        <CallButton href="tel:+966 55 429 9346">الاتصال</CallButton>
       </Form>
     </ContactContainer>
   );
