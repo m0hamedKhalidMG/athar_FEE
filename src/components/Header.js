@@ -153,7 +153,9 @@ const Header = () => {
     } else if (currentPath === '/login') {
       setActiveButton('login');
     }
-
+    else if (currentPath === '/contact') {
+      setActiveButton('contact');
+    }
     const token = localStorage.getItem('authToken');
     setIsLoggedIn(!!token);
   }, [location]);
@@ -214,7 +216,11 @@ const Header = () => {
             <Link to="/acplaces">الأماكن الأثرية</Link>
           </DropdownContent>
         </ServicesDropdown>
-        <Link to="/contact">تواصل معنا</Link>
+        <Link
+            to="/contact"
+            className={activeButton === 'contact' ? 'active' : ''}
+            onClick={() => handleClick('contact')}
+          >تواصل معنا {activeButton === 'contact' && '▼'}</Link>
         {/* Render Admin tab if user role is admin */}
         {userRole === 'Admin' && (
           <Link to="/admin" className={activeButton === 'admin' ? 'active' : ''}>
@@ -238,22 +244,25 @@ const Header = () => {
 
       {/* Dropdown menu for small screens */}
       <DropdownMenu isOpen={isMenuOpen}>
-        <Link to="/">الرئيسية</Link>
-        <Link to="/about">عن أثر</Link>
-        <Link to="/services">أنواع الآثار</Link>
-        <Link to="/report">تقديم بلاغ عن أثر</Link>
-        <Link to="/acplaces">الأماكن الأثرية</Link>
-        <Link to="/contact">تواصل معنا</Link>
-        {isLoggedIn ? (
-          <a onClick={handleLogout} style={{ cursor: 'pointer' }}>
-            تسجيل الخروج
-          </a>
-        ) : (
-          <Link to="/login">تسجيل الدخول</Link>
-        )}
-        {/* Render Admin tab in the dropdown if user role is admin */}
-        {userRole === 'admin' && <Link to="/admin">إدارة</Link>}
-      </DropdownMenu>
+  <Link to="/" onClick={toggleMenu}>الرئيسية</Link>
+  <Link to="/about" onClick={toggleMenu}>عن أثر</Link>
+  <Link to="/services" onClick={toggleMenu}>أنواع الآثار</Link>
+  <Link to="/report" onClick={toggleMenu}>تقديم بلاغ عن أثر</Link>
+  <Link to="/acplaces" onClick={toggleMenu}>الأماكن الأثرية</Link>
+  <Link to="/contact" onClick={toggleMenu}>تواصل معنا</Link>
+
+  {isLoggedIn ? (
+    <a onClick={() => { handleLogout(); toggleMenu(); }} style={{ cursor: 'pointer' }}>
+      تسجيل الخروج
+    </a>
+  ) : (
+    <Link to="/login" onClick={toggleMenu}>تسجيل الدخول</Link>
+  )}
+
+  {/* Render Admin tab in the dropdown if user role is admin */}
+  {userRole === 'admin' && <Link to="/admin" onClick={toggleMenu}>إدارة</Link>}
+</DropdownMenu>
+
     </HeaderContainer>
   );
 };
