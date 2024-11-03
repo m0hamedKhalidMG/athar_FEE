@@ -136,10 +136,8 @@ const ArchaeologicalPlacesPage = () => {
   const locationsData = {
     الرياض: {
       images: [
-        require('../images/الرياض/1.png'),
-        require('../images/الرياض/2.png'),
-        require('../images/الرياض/3.png'),
-        require('../images/الرياض/4.png'),
+        require('../images/الرياض/1.jpeg'),
+        require('../images/الرياض/2.jpeg'),
       ],
       description:
         'الرياض هي عاصمة المملكة العربية السعودية، تقع الرياض وسط شبه الجزيرة العربية في هضبة نجد وتضم 58 مواقعا ومعلم اثريا .',
@@ -206,11 +204,9 @@ const ArchaeologicalPlacesPage = () => {
     },
     القصيم: {
       images: [
-        require('../images/القصيم/1.jpg'),
-        require('../images/القصيم/2.jpg'),
-        require('../images/القصيم/3.jpg'),
-        require('../images/القصيم/4.jpg'),
-      ],
+        require('../images/القصيم/1.jpeg'),
+        require('../images/القصيم/2.jpeg'),
+        require('../images/القصيم/3.jpeg'),      ],
       description:
         'منطقة القصيم هي إحدى المناطق الإدارية وهي ذات تاريخ غني بالمواقع والنقوش الأثرية وتضم 41 موقعا  .',
       places: [
@@ -240,7 +236,7 @@ const ArchaeologicalPlacesPage = () => {
         'مسجد المعارك التاريخي',
         'قصر ابن حجاج التراثي بالقوارة',
         'بيت القاضي',
-        'ليت الصالحي التراثي',
+        'بيت الصالحي التراثي',
         'مقصورة الراجحي',
         'سور البكيرية القديم',
         'مقصورة السويلم',
@@ -260,10 +256,9 @@ const ArchaeologicalPlacesPage = () => {
     
     حائل: {
       images: [
-        require('../images/حائل/1.jpg'),
-        require('../images/حائل/3.jpg'),
-        require('../images/حائل/4.png'),
-        require('../images/حائل/5.jpg'),
+        require('../images/حائل/1.jpeg'),
+        require('../images/حائل/3.jpeg'),
+        require('../images/حائل/4.jpeg'),
       ],
       description:
         'منطقة حائل هي احد المناطق الإدارية وتقع شمال نجد ، تشتهر بمواقعها الأثرية العريقة وجبالها ذات النقوش الصخرية وتضم 47 موقعا .',
@@ -319,10 +314,9 @@ const ArchaeologicalPlacesPage = () => {
     },
     الجوف: {
       images: [
-        require('../images/الجوف/1.jpg'),
-        require('../images/الجوف/2.jpg'),
-        require('../images/الجوف/3.jpg'),
-        require('../images/الجوف/4.jpg'),
+        require('../images/الجوف/1.jpeg'),
+        require('../images/الجوف/2.jpeg'),
+        require('../images/الجوف/3.jpeg'),
       ],
       description:
         'منطقة الجوف هي إحدى مناطق المملكة العربية السعودية وتقع في شمال المملكة العربية، تشتهر بالمواقع الأثرية التي تعود للعصور الحجرية وتضم 12 موقعا .',
@@ -344,10 +338,9 @@ const ArchaeologicalPlacesPage = () => {
 
     تبوك: {
       images: [
-        require('../images/تبوك/1.jpg'),
-        require('../images/تبوك/2.jpg'),
-        require('../images/تبوك/3.jpg'),
-        require('../images/تبوك/4.jpg'),
+        require('../images/تبوك/1.jpeg'),
+        require('../images/تبوك/2.jpeg'),
+        require('../images/تبوك/3.jpeg'),
       ],
       description:
         'منطقة تبوك هي احدى المناطق الشمالية في المملكة وكانت موطناً لأمم عديدة قبل الإسلام، كالعرب البائدة مثل ثمودو مدين ، وتضم 34 موقعا .',
@@ -390,16 +383,17 @@ const ArchaeologicalPlacesPage = () => {
     },
     'المدينة المنورة': {
       images: [
-        require('../images/المدينة المنورة/1.jpg'),
-        require('../images/المدينة المنورة/3.jpg'),
-        require('../images/المدينة المنورة/4.jpg'),
-        require('../images/المدينة المنورة/5.jpg'),
-       
+        require('../images/المدينة المنورة/1.jpeg'),
+        require('../images/المدينة المنورة/3.jpeg'),
+        require('../images/المدينة المنورة/2.jpeg'),       
       ],
       description:
-        'المَدِينَة المُنَورَة هي أول عاصمة في تاريخ الإسلام وثاني أقدس الأماكن للمسلمين بعد مكة. تقع في الحجاز التاريخية غرب المملكة العربية ، وتضم 42 موقعا .',
+        'المَدِينَة المُنَورَة هي أول عاصمة في تاريخ الإسلام وثاني أقدس الأماكن للمسلمين بعد مكة. تقع في الحجاز التاريخية غرب المملكة العربية ، وتضم 45 موقعا .',
       places: [
-        'المدينة المنورة',
+       'المسجد النبوي',
+       'مسجد قباء',
+       'جبل احد',
+       'الروضه الشريفه',
         'العلا',
         'الربذة',
         'مدائن صالح',
@@ -443,14 +437,12 @@ const ArchaeologicalPlacesPage = () => {
         'سد معاوية',
       ],
     },
-    ينبع: {
-      images: [require('../images/ينبع/2.webp')],
-      description:
-        'ينبع هي إحدى محافظات منطقة المدينة المنورة في المملكة العربية السعودية ، ذات طابع تاريخي مميز وتضم 3 مواقع أثرية.',
-      places: ['قصر البنت في ينبع', 'ينبع البلد', 'جبل لؤلؤة'],
-    },
+   
   جدة: {
-      images: [require('../images/ينبع/2.webp')],
+      images: [require('../images/جدة/2.jpeg'),
+        require('../images/جدة/1.jpeg'),
+        require('../images/جدة/3.jpeg'),
+      ],
       description:
         'جدة إحدى محافظات منطقة مكة المكرمة، وتقع في غرب المملكة العربية السعودية على ساحل البحر الأحمر ، تشتهر بتراثها والمواقع التاريخية والأثرية وتضم 9 مواقع أثرية .',
         places: [
@@ -467,7 +459,9 @@ const ArchaeologicalPlacesPage = () => {
       
     },
     الطائف: {
-      images: [require('../images/ينبع/2.webp')],
+      images: [require('../images/الطائف/2.jpeg'),
+        require('../images/الطائف/1.jpeg'),
+        require('../images/الطائف/3.jpeg'),],
       description:
         'الطائف مدينة سعودية تقع في المنطقة الغربية ، تمتلك مخزونا وإرثا ثقافيا وتضم 43 موقعا .',
         places: [
@@ -497,10 +491,9 @@ const ArchaeologicalPlacesPage = () => {
    
     عسير: {
       images: [
-        require('../images/عسير/1.jpg'),
-        require('../images/عسير/2.jpg'),
-        require('../images/عسير/3.png'),
-        require('../images/عسير/4.jpg'),
+        require('../images/عسير/1.jpeg'),
+        require('../images/عسير/2.jpeg'),
+        require('../images/عسير/3.jpeg'),
       ],
       description:
         'منطقة عسير هي احدى مناطق المملكة وتقع في الجنوب الغربي منها، تتميز بالتراث العريق والمناظر الطبيعية وتضم 45 موقعا .',
@@ -551,10 +544,9 @@ const ArchaeologicalPlacesPage = () => {
     },
    " مكة المكرمة": {
       images: [
-        require('../images/مكة المكرمة/1.png'),
-        require('../images/مكة المكرمة/2.png'),
-        require('../images/مكة المكرمة/3.png'),
-        require('../images/مكة المكرمة/4.png'),
+        require('../images/مكة المكرمة/1.jpeg'),
+        require('../images/مكة المكرمة/2.jpeg'),
+        require('../images/مكة المكرمة/3.jpeg'),
       ],
       description:
         'مكَّة المكرَّمة هي المدينة الأقدس عند المسلمين ، تقع غرب المملكة العربية السعودية وتتميز بتاريخها وارثها العظيم ، تضم 18 موقعا .',
@@ -584,15 +576,15 @@ const ArchaeologicalPlacesPage = () => {
   
     "المنطقة الشرقية": {
       images: [
-        require('../images/المنطقة الشرقية/1.jpg'),
-        require('../images/المنطقة الشرقية/2.jpg'),
-        require('../images/المنطقة الشرقية/3.jpg'),
-        require('../images/المنطقة الشرقية/4.jpg'),
+        require('../images/المنطقة الشرقية/1.jpeg'),
+        require('../images/المنطقة الشرقية/2.jpeg'),
+        require('../images/المنطقة الشرقية/3.jpeg'),
       ],
       description:
-        'المنطقة الشرقية هي أكبر مناطق السعودية مساحةً ، تقع شرق المملكة العربية السعودية على ساحل الخليج العربي. تشتهر بتراثها التأريخي وتعكس العديد من الحضارات ، تضم  42 موقعا .',
+        'المنطقة الشرقية هي أكبر مناطق السعودية مساحةً ، تقع شرق المملكة العربية السعودية على ساحل الخليج العربي. تشتهر بتراثها التأريخي وتعكس العديد من الحضارات ، تضم  43 موقعا .',
         places: [
           'مدينة ثاج',
+          'واحه الاحساء',
           'عين جاوان',
           'آثار جزيرة جنة',
           'موقع الدفي',
@@ -639,7 +631,9 @@ const ArchaeologicalPlacesPage = () => {
       
     },
     "المنطقة الشمالية": {
-      images: [require('../images/ينبع/2.webp')],
+      images: [        require('../images/المنطقة الشمالية/1.jpeg'),
+        require('../images/المنطقة الشمالية/2.jpeg'),
+        require('../images/المنطقة الشمالية/3.jpeg'),],
       description:
         'المنطقة الشمالية تقع في شمال المملكة العربية السعودية وتتميز بطبيعة ذات طابع صحراوي وتراث مميز وتضم اكثر من 300 موقعا .',
         places: [
